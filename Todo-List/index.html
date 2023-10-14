@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadAllTodos()">
+    <div class="container mt-5">
+      <h1>TODO App</h1>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="newTodo"
+          class="form-control"
+          placeholder="Add a new todo"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" onclick="addTodo()">
+            Add
+          </button>
+        </div>
+      </div>
+      <button class="btn btn-danger mb-3" onclick="confirmDeleteAll()">
+        Delete All
+      </button>
+      <div class="error-message" id="errorMessage"></div>
+      <ul class="list-group" id="todoList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

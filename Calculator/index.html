@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <div id="expression"></div>
+          <div id="result"></div>
+        </div>
+        <div class="row justify-content-center">
+          <button class="btn btn-primary" onclick="addToExpression('7')">
+            7
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('8')">
+            8
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('9')">
+            9
+          </button>
+          <button class="btn btn-danger" onclick="addToExpression('/')">
+            /
+          </button>
+        </div>
+
+        <div class="row justify-content-center">
+          <button class="btn btn-primary" onclick="addToExpression('4')">
+            4
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('5')">
+            5
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('6')">
+            6
+          </button>
+          <button class="btn btn-danger" onclick="addToExpression('*')">
+            *
+          </button>
+        </div>
+
+        <div class="row justify-content-center">
+          <button class="btn btn-primary" onclick="addToExpression('1')">
+            1
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('2')">
+            2
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('3')">
+            3
+          </button>
+          <button class="btn btn-danger" onclick="addToExpression('-')">
+            -
+          </button>
+        </div>
+
+        <div class="row justify-content-center">
+          <button class="btn btn-primary" onclick="addToExpression('0')">
+            0
+          </button>
+          <button class="btn btn-primary" onclick="addToExpression('.')">
+            .
+          </button>
+          <button class="btn btn-success" onclick="calculate()">=</button>
+          <button class="btn btn-danger" onclick="addToExpression('+')">
+            +
+          </button>
+        </div>
+
+        <div class="row justify-content-center">
+          <button class="btn btn-warning" onclick="calculatePercentage()">
+            %
+          </button>
+          <button class="btn btn-info" onclick="calculateSquareRoot()">
+            √
+          </button>
+          <button class="btn btn-danger" onclick="clearDisplay()">AC</button>
+          <button class="btn btn-dark" onclick="backspace()">←</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
